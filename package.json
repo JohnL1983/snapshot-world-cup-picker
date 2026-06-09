@@ -1,0 +1,12 @@
+{
+  "name": "snapshot-wc2026",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.js",
+    "dev": "node scripts/build.js && echo 'Open index.html in your browser.'"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
