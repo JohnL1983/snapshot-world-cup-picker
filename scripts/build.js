@@ -21,9 +21,7 @@ if (!url || !key) {
 }
 
 const src  = path.join(__dirname, '..', 'index.template.html');
-const dest = path.join(__dirname, '..', 'dist', 'index.html');
-const distDir = path.join(__dirname, '..', 'dist');
-if (!fs.existsSync(distDir)) fs.mkdirSync(distDir);
+const dest = path.join(__dirname, '..', 'index.html');
 let html   = fs.readFileSync(src, 'utf8');
 html = html.replace('%%SUPABASE_URL%%', url).replace('%%SUPABASE_ANON_KEY%%', key);
 fs.writeFileSync(dest, html, 'utf8');
